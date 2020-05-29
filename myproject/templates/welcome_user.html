@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="jumbotron">
+    <h3 align="center">Welcome to Disease Predictor</h3>
+    <p align="center">Hi {{current_user.username}}, You are logged in!</p>
+    <h5 align="center">Check Your Symptoms</h5>
+    <div align="center">
+     <a class="btn btn-primary" href="{{url_for('main')}}">Here</a>
+    </div>
+  </div>
+  <h2 align='center'>OUR TEAM</h2>
+  <br>
+
+  <hr class="featurette-divider">
+
+  <div class="container marketing">
+
+<!-- Three columns of text below the carousel -->
+  <div class="row">
+    <div class="col-lg-3">
+    <img class="rounded-circle" src="https://scontent.fktm4-1.fna.fbcdn.net/v/t1.0-9/45405023_1887403431344967_6089532227157229568_n.jpg?_nc_cat=111&_nc_ht=scontent.fktm4-1.fna&oh=2b92d8d0755ad484c6ac562f7dbe22b7&oe=5CA7BDF9" alt="Sudip imgage" width="140" height="140">
+    <h4>Sudip Shrestha</h4>
+    <p>072/BCT/39</p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-3">
+      <img class="rounded-circle" src="https://scontent.fktm4-1.fna.fbcdn.net/v/t1.0-9/46381720_2086488888109970_169296791785701376_n.jpg?_nc_cat=103&_nc_ht=scontent.fktm4-1.fna&oh=0462c1a33892eaf6c23ef505963b58ac&oe=5CAFE2A4" alt="Ritesh image" width="140" height="140">
+      <h4>Ritesh Tuladhar</h4>
+      <p>072/BCT/28</p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-3">
+      <img class="rounded-circle" src="https://scontent.fktm4-1.fna.fbcdn.net/v/t1.0-9/18275008_1428376970556932_1177948218327015517_n.jpg?_nc_cat=101&_nc_ht=scontent.fktm4-1.fna&oh=91cc4743f29254bad0bb4d67cae45679&oe=5CA831A5" alt="Ssandesh image" width="140" height="140">
+      <h4>Sandesh Shahi</h4>
+      <p>072/BCT/31<p>
+    </div><!-- /.col-lg-4 -->
+
+  <div class="col-lg-3">
+    <img class="rounded-circle" src="https://scontent.fktm4-1.fna.fbcdn.net/v/t1.0-1/c84.111.768.768/s240x240/46485377_1789283404514063_2627608657516298240_n.jpg?_nc_cat=108&_nc_ht=scontent.fktm4-1.fna&oh=4f10b33c226365cdbfa13d0ce22a0c21&oe=5CA69B3E" alt="Rahul image" width="140" height="140">
+    <h4>Rohan Maharjan</h4>
+    <p>072/BCT/29</p>
+  </div><!-- /.col-lg-4 -->
+
+</div><!-- /.row -->
+
+
+<hr class="featurette-divider">
+
+<div>
+<footer class="container">
+  <p class="float-right"><a href="#">Back to top</a></p>
+  <p>&copy; 2018 R&S Corp, Inc. </p>
+</footer>
+
+{% endblock %}

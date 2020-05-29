@@ -1,0 +1,22 @@
+
+h3{
+  align: center;
+}
+  body{
+    background-color: #6EB5F5;
+  }
+
+  .form-conatiner{
+	text-align: left;
+	border:1px solid #fff;
+	padding: 50px 60px;
+	margin-top: 5vh;
+	-webkit-box-shadow: 7px 7px 5px 0px;
+	-moz-box-shadow: 7px 7px 5px 0px;
+	box-shadow: 7px 7px 5px 0px ;
+}
+
+.container-fluid{
+	margin-top: 10px;
+  margin-bottom: 10px;
+}

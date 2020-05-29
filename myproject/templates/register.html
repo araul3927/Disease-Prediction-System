@@ -1,0 +1,39 @@
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename ='style.css')}}">
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container-fluid">
+  <h3 align="center">Disease Predictor</h3>
+  <hr>
+  <div class="row">
+    <div class="col-md-4 col-sm-6 col-xs-12"></div>
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <form class = "form-conatiner"  method="post">
+        <h5 align="center">Please Enter The Information</h5>
+        {{form.hidden_tag()}}
+        <div class="form-group" align="center">
+          {{form.email.label}}<br>{{form.email}}<br>
+        </div>
+
+        <div class="form-group" align="center">
+          {{form.username.label}}<br>{{form.username()}}<br>
+        </div>
+
+        <div class="form-group" align="center">
+          {{form.password.label}}<br>{{form.password()}}<br>
+        </div>
+
+        <div class="form-group" align="center">
+          {{form.pass_confirm.label}}<br>{{form.pass_confirm}}
+        </div>
+
+        <div class="form-group" align="center">
+          <br>
+          {{form.submit()}}
+        </div>
+        </form>
+    </div>
+  </div>
+<div>
+
+{% endblock %}
